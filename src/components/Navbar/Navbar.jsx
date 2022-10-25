@@ -1,11 +1,13 @@
 import React from 'react';
+import CartWidget from '../CartWidget/CartWidget';
+import './Navbar.css'
 
 const Navbar = () => {
     return (
         <>
-         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <a className="navbar-brand" href="#"><img className='logo' src="./img/logocava.png" alt="Logo" /></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
@@ -15,27 +17,22 @@ const Navbar = () => {
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
+                <a className="nav-link" href="#">Promociones</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Productos
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
+                  <li><a className="dropdown-item" href="#">Cervezas</a></li>
+                  <li><a className="dropdown-item" href="#">Tequilas</a></li>
+                  <li><hr className="dropdown-divider" />Vinos</li>
+                  <li><a className="dropdown-item" href="#">Tinto</a></li>
+                  <li><a className="dropdown-item" href="#">Blanco</a></li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <CartWidget/> 
           </div>
         </div>
       </nav>
