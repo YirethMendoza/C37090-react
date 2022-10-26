@@ -8,3 +8,21 @@
 .logo {
     width: 70px;
 }
+nav {
+    background-color: #3a5a40;
+ }
+
+ .i {
+    color: white;
+ }
+
+.i:hover {
+    color: #f2cc8f;
+}
+
+.navbar-toggler{
+    color: white;
+}
+.navbar-toggler-icon {
+    color: white;
+}
